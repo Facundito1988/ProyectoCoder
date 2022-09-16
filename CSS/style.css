@@ -1,112 +1,157 @@
-* { 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-}
+body {
+  font-family: 'Roboto', sans-serif;
 
+}
 
 /* ESTILOS DE HEADER */
 
 
-header {      
+.menu {      
    background-color:#1E539E;
-    height: 15%;
+   display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+
+.menu .logo{
+    width: 250px;
+    height: 250px;
+    grid-column: 1 / 3;
+    justify-content: center;
+   
+}
+
+.menu .navbar{
+  grid-column: 3 / 8;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+.menu .navbar li{
+  list-style: none;
+
+}
+
+
+.menu .navbar a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: 700;
+
+}
+
+/* ESTILOS MAIN */
+
+.principal{
+  height: 80vh;
+  /* background-color: #1f324d; */
+  background-image: url(../assets/image/foto\ lamparas.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.principal .sobreNosotros{
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: white;
+  transform: rotateX(360deg) ;
+}  
+
+.principal h1{
+  font-size: 4em;
+  color:#7eb0f7 ;
+}
+ /* ESTILOS FOOTER */
+
+.footer{
+  display: grid;
+  height: 100%;
+  align-items: center;
+  background-color: #1E539E;
+  color: white;
+  grid-template-areas: 
+  "redes logo-footer ." ;
+}
+
+.footer .redes{
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer .redes .fa-brands{
+  margin-right: 20px;
+}
+
+.footer .redes .seguinos{
+  margin-left: 20px;
+}
+
+.footer .logo-footer{
+  margin: 0;
+  width: 120px;
+  height: 120px;
+}
+
+/* ESTILOS MAIN CONTACTO */
+
+.principal-contacto{
+  height: 80vh;
+  background-image: url(../assets/image/foto\ lamparas.jpg);
+  background-size: cover;
+  max-width: 100%;
  
+}
+
+.contacto{
+  color: white;
+  padding: 20px;
+}
+
+.titulo-contacto{
+  text-align: center;
+}
+
+.caja-contacto {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5 );
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 1em;
+  border: none;
 
 }
 
-header img{
-    display: inline;
-    margin: 10;
-    padding: 10;
-    width: 8%;
-    height: 95%;
+#enviar-boton{
+  background-color:#7eb0f7 ;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 25px;
 }
 
-.menu {
-    position: fixed;
-    width: 40%;
-    max-height: 20%;
-    top: 10%;
-    left: 50%;
-    border-radius: 50px;
-    border-radius: 200px;
-    background-color: #5486E3;
-  }
-
-  .menu ul {
-    list-style-type: none;
-  }
-  
-  .menu ul li {
-    display: inline-block;;;
-    font-weight: 400;
-    font-size: 1.26rem;
-    padding: 15px 35px 18px 35px;
-  }
-  
-  .menu ul li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-
-/* ESTILOS DE MAIN */
-
-main{
-    position: relative;
-    background-color: white;
-    height: 70%;
-}
-
-main section{
-     background-color: #5486E3;
-    display: inline;
-    width: 50%;
-    height: 100%;
-     float: left; 
-     text-align: center;
-}
-
-
-main section .sobreNosotros{
-   padding: 80px;
-   margin-top: 20%;
-    text-align: center;
-}
-
-/* 
- main section #img-port{
-   background-color: ;
-    width: 50%;
-    height: 100%;
-    float: right; 
-    
-} */
-
-/* ESTILOS DE FOOTER */
-
-footer{
-    background-color: #1E539E;
-    height: 15%;
- 
-}
-
-footer div .redes{
-    display: inline-block;
-    text-align: center;
-    width: 10%;
-    height: 10%;
-
-}
-
-.logoFooter{
-    text-align: center;
-
-}

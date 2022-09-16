@@ -4,55 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b43147cf4f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Contacto</title>
 </head>
 <body>
     <header>
 
-        <img src="../assets/image/ACYEDE.png" alt="">
-  
-        <div class="menu">
-          <nav>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./comision_directiva.html">Comisión Directiva</a></li>
-              <li><a href="./cursos_capacitaciones.html">Cursos y Capacitaciones</a></li>
-              <li><a href="./aprendiendo.html">Aprendiendo</a></li>
-              <li><a href="./contacto.html">Contactenos</a></li>
-          </nav>
-        </div>
-  
-    </header>
+        <nav class="menu">
+          <img src="../assets/Logo Acyede Blanco.png" class="logo" alt="acyede logo">
+          <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../page/comision_directiva.html">Comisión Directiva</a></li>
+            <li><a href="../page/cursos_capacitaciones.html">Cursos y Capacitaciones</a></li>
+            <li><a href="../page/aprendiendo.html">Aprendiendo</a></li>
+            <li><a href="../page/contacto.html">Contactenos</a></li>
+          </ul>
+        </nav>
+      
 
-    <main>
-        <h2>FORMULARIO DE CONTACTO</h2>
-        <form action="">
-        <label>Nombre:</label>
-        <input maxlength="50"/>
-        <br>
-        <label>Email:</label>
-        <input name="email" required type="email" placeholder="Escribe tu email" />
-        <br>
-        <label>Teléfono</label>
-        <input name="telefono" />
-        <br>
-        <label>Fecha de nacimiento:</label>
-        <input name="fecha" type="date" />
-        <br>
-        <textarea cols="80" name="observaciones" rows="8">
-        deja aquí tu mensaje </textarea>
-        <input type="submit" value="Enviar" />
-        </form>
-    </main>
-    <hr>
-    <footer>
-   
-        <div class="logoFooter"><img src="../assets/image/ACYEDE.png" alt=""></div> 
+  </header>
+
+    <main class="principal-contacto">
        
-             
+        <div class="contacto">
+            <h2 class="titulo-contacto">¡CONTACTANOS!</h2>
+
+        <div class="caja-contacto">    
+            <form action="">
+            <p>
            
-        
-       </footer>
+                <input maxlength="50" placeholder="Nombre y Apellido"/>
+            </p>
+            <p>
+
+                <input name="email" required type="email" placeholder="EMAIL" />   
+            </p>
+            <p>
+              
+                <input name="telefono" required type="tel" placeholder="Telefono" />
+            </p>
+            <p>
+           
+                <textarea cols="80" name="observaciones" rows="8">Dejanos tu mensaje! </textarea>
+            </p>   
+            <p> 
+                <input type="submit" value="Enviar" id="enviar-boton" />
+            </p>
+            </form>
+        </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+   
+        <div class="redes">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <div class="seguinos">
+            <h2>Seguinos!</h2>
+          </div>
+        </div> 
+       
+        <div class="logo-footer">
+        <img src="../assets/image/ACYEDE.png" alt="">
+        </div>
+       
+       
+      </footer>
 </body>
 </html>
