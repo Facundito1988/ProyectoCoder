@@ -43,6 +43,16 @@ body {
 
 }
 
+li:hover{
+  background: #2079b0;
+  background-image: -webkit-linear-gradient(top, black, rgba(105, 95, 95, 0.678));
+  background-image: -moz-linear-gradient(top, black, rgba(105, 95, 95, 0.678));
+  background-image: -ms-linear-gradient(top, black, rgba(105, 95, 95, 0.678));
+  background-image: -o-linear-gradient(top, black, rgba(105, 95, 95, 0.678));
+  background-image: linear-gradient(to bottom, black, rgba(105, 95, 95, 0.678));
+  text-decoration: none;
+}
+
 
 .menu .navbar a{
   text-decoration: none;
@@ -51,6 +61,7 @@ body {
   font-weight: 700;
 
 }
+
 
 /* ESTILOS MAIN */
 
@@ -69,8 +80,15 @@ body {
   grid-column: 7 / 10;
   grid-row: 3 / 7;
   color: white;
-  transform: rotateX(360deg) ;
+  margin: auto;
 }  
+
+.sobreNosotros:hover{
+  background-color: rgba(245, 236, 236, 0.733);
+  color: black;
+  transition-property: all;
+  transition-duration: 2s;
+}
 
 .principal h1{
   font-size: 4em;
